@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>C81</title>
+<link rel="stylesheet" type="text/css" href="C81style.css">
+</head>
+<body class="body_backgorund">
+
+<center>
+	<h1>My First Canvas</h1>
+</center>
+
+
+<script src="C81main.js"></script>
+</body>
+</html>
+<button=document.getelementById>
+	("button");
+<button.addeventlistner('click'): my_function>;
+	function my_function (e)
+</button>
+	<console .log ('I am a button')
+	canvas.addEventListener("mousedown", my_mousedown);
+
+function my_mousedown(e)
+{
+     // taking color from input box
+    // additional activity start
+    color = document.getElementById("color"). value;
+    console.log(color);
+    // addition activity ends
+    
+     mouse_x = e.clientX - canvas.offsetLeft;
+     mouse_y = e.clientY - canvas.offsetTop;
+
+    console.log("X = " + mouse_x + " ,Y =  " + mouse_y);
+    circle(mouse_x , mouse_y);    
+}
+<!DOCTYPE html>
+<html>
+<style>
+div
+{
+background:black;
+width:500px;
+height:500px;
+color:white;
+text-align:center;
+}
+#demo_p
+{
+padding-top:200px;
+font-size:20px;
+}
+</style>
+<body>
+<h3>MOVE THE MOUSE, CLICK, AND PLAY AROUND THE BLACK DIV</h3>
+<div id="demo" onmousedown="mouseDown()" onmouseup="mouseUp()">
+<p id="demo_p"></p>
+</div>
+
+<script>
+div = document.getElementById('demo');
+mouse_event="empty";
+demo_p = document.getElementById('demo_p');
+
+div.addEventListener("mousedown", function (e)
+{
+div.style.background = "red";
+    mouse_event="clicked";
+    demo_p.innerHTML = "MOUSE DOWN";
+});
+
+div.addEventListener("mousemove", function (e)
+{
+div.style.background = "green";
+    demo_p.innerHTML = "MOUSE MOVE";
+   
+    if(mouse_event == "clicked")
+    {
+    demo_p.innerHTML = "MOUSE DOWN + MOUSE MOVE";
+div.style.background = "yellow";
+    }
+});
+
+div.addEventListener("mouseup", function (e)
+{
+div.style.background = "blue";
+    mouse_event="mouseUp";
+    demo_p.innerHTML = "MOUSE UP";
+});
+
+div.addEventListener("mouseleave", function (e)
+{
+div.style.background = "grey";
+    mouse_event="mouseDown";
+    demo_p.innerHTML = "MOUSE LEAVE";
+
+});
+{
+    current_Position_of_mouse_x = e.clientX = canvas.offsetleft;
+    current_Position_of_mouse_y = e.clientX = canvas.offsetstop;
+    if (MouseEvent=="mousedown"){
+
+        ctx.beginpath();
+        ctx.strokestyle=colour;
+        ctx.linewidth=width_of_line;
+
+        console.log("last position of x and y cordinates = ");
+        console.log("x ="+ current_Position_of_mouse_x+"y="+ current_Position_of_mouse_y);
+        ctx.lineto(current_Position_of_mouse_x,current_Position_of_mouse_y);
+        ctx.stroke();
+    }
+}
+</script>
+
+</body>
+</html>

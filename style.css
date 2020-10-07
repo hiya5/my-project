@@ -1,0 +1,29 @@
+h1
+{
+	color: red; 
+	font-size: 40px;
+}
+.body_backgorund {background-image:url("bg1.jpg") ;
+    background-position: center;
+    background-size: cover;
+}
+
+#myCanvas{
+    border-width: 10px;
+    background-color: white;
+    border-style: ridge;
+
+}
+ctx.beginPath ();
+ctx.strokeStyle = colour;
+ctx.lineWidth = 2;
+ctx.arc (200, 200, 40, 0, 28 * Math.PI);
+ctx.stroke ();
+<script src="main.js>"</script>
+element.addeventlistner<("event",my_function);
+my_function(e)
+{
+//any space code
+}
+
+
